@@ -42,9 +42,10 @@ export const getEpisodes = async (req, res) => {
   let request = [];
   if (Object.entries(req.query).length > 0) {
     request = req.query;
-  } else if (Object.entries(req.body).length > 0) {
-    request = req.body;
   } 
+  // else if (Object.entries(req.body).length > 0) {
+  //   request = req.body;
+  // } 
   if (!request.page || !request.limit) {
     res.status(HttpStatus.BAD_REQUEST.code)
       .send(new Response(HttpStatus.BAD_REQUEST.code,
@@ -101,9 +102,10 @@ export async function searchEpisodes(req, res) {
   let request = [];
   if (Object.entries(req.query).length > 0) {
     request = req.query;
-  } else if (Object.entries(req.body).length > 0) {
-    request = req.body;
   } 
+  // else if (Object.entries(req.body).length > 0) {
+  //   request = req.body;
+  // }
   if (!request.page || !request.limit) {
     res.status(HttpStatus.BAD_REQUEST.code)
       .send(new Response(HttpStatus.BAD_REQUEST.code,

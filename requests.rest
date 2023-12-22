@@ -16,5 +16,10 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:5000/?page=9&limit=10
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGF1bCIsImlhdCI6MTcwMzI3MzI2OCwiZXhwIjoxNzAzMjc0MTY4fQ.RS1gn6uzCJ6G2dsjYKeL-apCA1DqhRmbd_EqrJtQ_OU
+GET http://localhost:5000/search
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGF1bCIsImlhdCI6MTcwMzI3NTE1MCwiZXhwIjoxNzAzMjc2MDUwfQ.6vbqUtte1LU6KYlDHTCEhEB5r1Hd2ReiOD5ypQndSFs
+
+{
+    "page": "1",
+    "limit": "10"
+}
