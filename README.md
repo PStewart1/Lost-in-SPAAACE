@@ -17,10 +17,11 @@ You are expected to have this project run locally on your machine (or sandbox en
 
 Database diagram can be found in `Design Documents/dbDesign.md`
 
+
 Instructions:
 1. Clone Repo.
 2. Install [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) if you dont have them already.
-3. Run `docker-compose up -d --build` to start docker images of the app and db.
+3. Run `docker-compose up --build` to start docker images of the app and db.
 4. Wait about 15 seconds till you see: 
    * `Container mysqlcontainer    Healthy`
    * `Container nodeappcontainer  Started`

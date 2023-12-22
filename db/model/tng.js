@@ -7,6 +7,10 @@ const Tng = sequelize.define('tng', {
     primaryKey: true,
     autoIncrement: true,
   },
+  series: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   season: {
     type: DataTypes.INTEGER,
     allowNull: false,

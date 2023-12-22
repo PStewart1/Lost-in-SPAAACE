@@ -17,6 +17,9 @@ async function createTOS() {
     return;
   }
   const tosArray = await csv().fromFile(tosPath);
+  tosArray.forEach((episode) => {
+    episode.series = 'The Original Series';
+  });
   const results = await db.tos.bulkCreate(tosArray)
     .catch((error) => {
       log.error(error.message);
@@ -33,6 +36,9 @@ async function createTNG() {
     return;
   }
   const tngArray = await csv().fromFile(tngPath);
+  tngArray.forEach((episode) => {
+    episode.series = 'The Next Generation';
+  });
   const results = await db.tng.bulkCreate(tngArray)
     .catch((error) => {
       log.error(error.message);
@@ -49,6 +55,9 @@ async function createDS9() {
     return;
   }
   const ds9Array = await csv().fromFile(ds9Path);
+  ds9Array.forEach((episode) => {
+    episode.series = 'Deep Space Nine';
+  });
   const results = await db.ds9.bulkCreate(ds9Array)
     .catch((error) => {
       log.error(error.message);
@@ -65,6 +74,9 @@ async function createVOY() {
     return;
   }
   const voyArray = await csv().fromFile(voyPath);
+  voyArray.forEach((episode) => {
+    episode.series = 'Voyager';
+  });
   const results = await db.voy.bulkCreate(voyArray)
     .catch((error) => {
       log.error(error.message);
@@ -81,6 +93,9 @@ async function createENT() {
     return;
   }
   const entArray = await csv().fromFile(entPath);
+  entArray.forEach((episode) => {
+    episode.series = 'Enterprise';
+  });
   const results = await db.ent.bulkCreate(entArray)
     .catch((error) => {
       log.error(error.message);

@@ -8,6 +8,10 @@ const Ent = sequelize.define('ent', {
     primaryKey: true,
     autoIncrement: true,
   },
+  series: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   season: {
     type: DataTypes.INTEGER,
     allowNull: false,
