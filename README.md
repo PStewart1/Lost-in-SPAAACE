@@ -25,3 +25,5 @@ Instructions:
    * `Container mysqlcontainer    Healthy`
    * `Container nodeappcontainer  Started`
 in the terminal, so the containers can fully spin up and connect.
+
+5. When finished, run `docker-compose down` to stop the containers, followed by `sudo rm -rfv ~/database/` to remove the database cache.

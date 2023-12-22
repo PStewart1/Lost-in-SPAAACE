@@ -1,0 +1,20 @@
+POST  http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Paul"
+}
+
+###
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGF1bCIsImlhdCI6MTcwMzE3OTk3NX0.CDAyo-fjbrXlalytiElaNX44h517rzYQ69AIA6ahKJg"
+}
+
+###
+
+GET http://localhost:3000/tos?page=1&limit=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGF1bCIsImlhdCI6MTcwMzE3OTk3NSwiZXhwIjoxNzAzMTgwODc1fQ.jLAal1Z959eZgyrSiNn2y00ySfVhF8Tl1zQxLEeRqZQ

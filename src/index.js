@@ -16,7 +16,7 @@ const app = express();
 app.use(cors({ origin: '*' }));
 app.use(express.json());
 
-app.use('/episodes', router);
+app.use('/', router);
 app.get('/', (req, res) => {
   res.send(new Response(HttpStatus.OK.code,
     HttpStatus.OK.status, 'Welcome to the Star Trek API',));

@@ -12,6 +12,10 @@ const voyPath = path.join(dirName, 'VOYepisodes.csv');
 const entPath = path.join(dirName, 'ENTepisodes.csv');
 
 async function createTOS() {
+  if ((await db.tos.findAll({})).length > 0) {
+    log.info("TOS episodes already exist in database");
+    return;
+  }
   const tosArray = await csv().fromFile(tosPath);
   const results = await db.tos.bulkCreate(tosArray)
     .catch((error) => {
@@ -24,6 +28,10 @@ async function createTOS() {
 };
 
 async function createTNG() {
+  if ((await db.tng.findAll({})).length > 0) {
+    log.info("TNG episodes already exist in database");
+    return;
+  }
   const tngArray = await csv().fromFile(tngPath);
   const results = await db.tng.bulkCreate(tngArray)
     .catch((error) => {
@@ -36,6 +44,10 @@ async function createTNG() {
 };
 
 async function createDS9() {
+  if ((await db.ds9.findAll({})).length > 0) {
+    log.info("DS9 episodes already exist in database");
+    return;
+  }
   const ds9Array = await csv().fromFile(ds9Path);
   const results = await db.ds9.bulkCreate(ds9Array)
     .catch((error) => {
@@ -48,6 +60,10 @@ async function createDS9() {
 };
 
 async function createVOY() {
+  if ((await db.voy.findAll({})).length > 0) {
+    log.info("VOY episodes already exist in database");
+    return;
+  }
   const voyArray = await csv().fromFile(voyPath);
   const results = await db.voy.bulkCreate(voyArray)
     .catch((error) => {
@@ -60,6 +76,10 @@ async function createVOY() {
 };
 
 async function createENT() {
+  if ((await db.ent.findAll({})).length > 0) {
+    log.info("ENT episodes already exist in database");
+    return;
+  }
   const entArray = await csv().fromFile(entPath);
   const results = await db.ent.bulkCreate(entArray)
     .catch((error) => {
