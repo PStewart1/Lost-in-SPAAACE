@@ -15,8 +15,8 @@ You are expected to have this project run locally on your machine (or sandbox en
 
 ---
 
-Database diagram can be found in [Design Documents/dbDesign.md](https://github.com/PStewart1/Lost-in-SPAAACE/blob/main/Design%20Documents/dbDesign.md)
-API documentation and instructions can be found in [Design Documents/API documentation.md](https://github.com/PStewart1/Lost-in-SPAAACE/blob/main/Design%20Documents/API%20documentation.md)
+* Database diagram can be found in [Design Documents/dbDesign.md](https://github.com/PStewart1/Lost-in-SPAAACE/blob/main/Design%20Documents/dbDesign.md)
+* API documentation and instructions can be found in [Design Documents/API documentation.md](https://github.com/PStewart1/Lost-in-SPAAACE/blob/main/Design%20Documents/API%20documentation.md)
 
 ## Instructions:
 1. Clone Repo.
