@@ -5,6 +5,7 @@
 classDiagram
     class tos {
        - id: int
+       + series: string
        + season: int
        + episode: int
        + airdate: string
@@ -14,6 +15,7 @@ classDiagram
 
     class tng {
        - id: int
+       + series: string
        + season: int
        + episode: int
        + airdate: string
@@ -23,6 +25,7 @@ classDiagram
 
     class ds9 {
        - id: int
+       + series: string
        + season: int
        + episode: int
        + airdate: string
@@ -32,6 +35,7 @@ classDiagram
 
     class voy {
        - id: int
+       + series: string
        + season: int
        + episode: int
        + airdate: string
@@ -41,6 +45,7 @@ classDiagram
 
     class ent {
        - id: int
+       + series: string
        + season: int
        + episode: int
        + airdate: string
