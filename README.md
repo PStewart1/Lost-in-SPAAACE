@@ -28,7 +28,7 @@ in the terminal, so the containers can fully spin up and connect.
 5. When finished, run `docker-compose down` to stop the containers, followed by `sudo rm -rfv ~/database/` to remove the database cache.
 ---
 
-# API instructions
+## API instructions
 
 You can use Postman or your api tester of choice, on port 3000.
 
@@ -49,7 +49,7 @@ You can get all episodes with a GET at `/`, or filter them by title or date. You
 ---
 
 
-# Database structure
+## Database structure
 
 ```mermaid
 classDiagram
